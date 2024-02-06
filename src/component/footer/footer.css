@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+footer {
+  color: #fff;
+}
+
+.main-footer {
+  max-width: 100%;
+  background-color: hsl(205, 90%, 12%);
+  padding: 1.2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.columns {
+  width: 300px;
+}
+
+.main-head {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.columns h4 {
+  color: #fff;
+}
+
+.logo-comapnay img {
+  width: 300px;
+}
+
+
+.social {
+  margin-top: 20px;
+}
+
+.social a {
+  color: #fff;
+  margin-right: 15px;
+}
+
+.links-quick ul {
+  list-style: none;
+  padding: 0;
+}
+
+.links-quicks span {
+  margin-bottom: 10px;
+}
+
+.links-quick span {
+  text-decoration: none;
+  color: #fff;
+}
+
+.main-links li a {
+  color: #fff;
+
+}
+
+/* .address {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+} */
+
+.address .fas,
+.address .text {
+  margin-right: 10px;
+  color: #fff4f4 !important;
+}
+
+.texts {
+  color: #fffbfb;
+}
+
+.phones {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-top: 10px;
+}
+
+.emails .texts {
+  font-size: 1.5rem;
+
+  margin-top: 22px;
+}
+
+.emails input {
+  font-size: 1.5rem;
+
+}
+
+
+.btn {
+  margin-top: 20px;
+}
+
+.btn button {
+  background-color: #fff;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.bottom {
+  background-color: #222;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.credit a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.social a span {
+  font-size: 2rem;
+  color: #fff !important;
+  border-radius: 50%;
+  padding: 0.5rem;
+  border: 2px solid white;
+}
+
+@media screen and (max-width: 768px) {
+  .columns {
+   width: 100%;
+  }
+  .main-footer {
+    max-width: 100%;
+    background-color: hsl(205, 90%, 12%);
+    padding: 1.2rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

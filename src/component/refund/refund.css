@@ -1,0 +1,43 @@
+.refund-section{
+    width: 100%;
+}
+
+.refund-section .container{
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 40px 45px;
+}
+
+.refund-section .container .heading{
+    width: 100%;
+}
+
+.refund-section .container .heading span{
+    font-size: 3rem;
+    font-weight: 500;
+    font-variant: small-caps;
+    position: relative;
+}
+
+
+
+.refund-section .container .heading span::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+
+.refund-section .container .refund-main-box{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.refund-section .container .refund-main-box p{
+    font-size: 1.3rem;
+}

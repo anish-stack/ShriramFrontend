@@ -1,0 +1,42 @@
+.shipping-section{
+    width: 100;
+}
+
+.shipping-section .container{
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 40px 45px;
+}
+
+.shipping-section .contianer .heading{
+    width: 100%;
+}
+
+.shipping-section .container .heading span{
+    font-size: 3rem;
+    font-weight: 500;
+    font-variant: small-caps;
+    position: relative;
+}
+
+.shipping-section .container .heading span::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+
+}
+
+.shipping-section .container .shipping-main-box{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.shipping-section .container .shipping-main-box p{
+    font-size: 1.3rem;
+}

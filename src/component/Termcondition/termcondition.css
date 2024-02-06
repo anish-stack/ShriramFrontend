@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.term-condition{
+    width: 100%;
+}
+
+.term-condition .Container{
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 40px 45px;
+}
+
+.term-condition .Container .heading span{
+    font-size: 3rem;
+    font-weight: 500;
+    font-variant: small-caps;
+    position: relative;
+}
+
+.term-condition .Container .heading span::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+
+}
+
+.term-condition .Container .term-box p{
+    font-size: 1.3rem;
+}
+
+.term-condition .Container .term-box ul li{
+    font-size: 1.3rem;
+}
+
+
+

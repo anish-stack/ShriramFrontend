@@ -1,0 +1,157 @@
+/* Base styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: aliceblue;
+    color: #fff;
+  }
+  
+  .logo {
+    display: flex;
+    width: 160px;
+    height: 70px;
+    align-items: center;
+  }
+
+
+  
+  .logo img {
+    width: 100%;
+    height: 100%;
+    margin-right: 10px;
+  }
+  
+  .nav,
+  .user {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav li,
+  .user li {
+    margin-right: 20px;
+    color: black;
+    font-size: 1.1rem;
+  }
+
+  .nav li,
+  .user li a{
+    color: black!important;
+  }
+  
+  
+  
+  .cart-icon img {
+    width: 25px;
+    height: 25px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .logo span {
+      /* display: none; */
+    }
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-position: 6%;
+      object-fit: cover;
+  }
+  .product-card {
+
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+
+}
+    .nav {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+   backdrop-filter: blur(22px);
+      z-index: 99;
+    }
+  .about-us{
+    min-height: 100vh!important;
+  }
+    .nav.open {
+      display: flex;
+    }
+  
+    .nav li {
+      text-align: center;
+      margin: 0;
+      padding: 15px;
+      border-bottom: 1px solid #555;
+    }
+  
+    .menu-btn {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+    }
+  
+    .menu-btn .bar {
+      width: 25px;
+      height: 3px;
+      background-color: #050505;
+      margin: 5px 0;
+      transition: 0.4s;
+    }
+  
+    .header.menu-open {
+      background-color: #ffffff;
+      padding-bottom: 20px;
+    }
+  
+    .header.menu-open .logo span {
+      display: block;
+    }
+  }
+
+  /* my css */
+  
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-toggle {
+    padding: 10px;
+    cursor: pointer;
+   
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+  }
+  
+  .dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .dropdown-menu li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .dropdown-menu li:hover {
+    background-color: #f0f0f0;
+  }

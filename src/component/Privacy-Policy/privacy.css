@@ -1,0 +1,58 @@
+.privacy-section{
+    width: 100;
+}
+
+.privacy-section .container{
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 40px 45px;
+}
+
+.privacy-section .contianer .heading{
+    width: 100%;
+}
+
+.privacy-section .container .heading span{
+    font-size: 3rem;
+    font-weight: 500;
+    font-variant: small-caps;
+    position: relative;
+}
+
+.privacy-section .container .heading span::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+
+}
+
+.privacy-section .container .privacy-main-box{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.privacy-section .container .privacy-main-box p{
+    font-size: 1.4rem;
+}
+
+.privacy-section .container .privacy-main-box h3{
+    font-size: 1.7rem;
+    font-variant: small-caps;
+}
+
+.privacy-section .container .privacy-main-box ol{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+.privacy-section .container .privacy-main-box ol li{
+    font-size: 1.3rem;
+}

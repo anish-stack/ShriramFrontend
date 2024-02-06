@@ -1,0 +1,56 @@
+/* Best.css */
+
+.Best-conatiner {
+    padding: 20px;
+    /* background-color: #f8f8f8; */
+}
+
+.Best-cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Cards-Service {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 320px;
+    height: 200px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #fff;
+    /* border-radius: 50px; */
+    /* background: #e0e0e0; */
+    box-shadow:  20px 20px 60px #f3efef,
+                 -20px -20px 60px #ffffff;
+    transition: transform 0.3s ease-in-out;
+}
+
+.Cards-Service:hover {
+    transform: translateY(-5px);
+}
+
+.icon {
+    font-size: 64px;
+    color: #ff0080;
+    /* Adjust the color as needed */
+}
+
+.text-best {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .Best-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Cards-Service {
+        margin-bottom: 15px;
+    }
+}
