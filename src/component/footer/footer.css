@@ -1,13 +1,247 @@
-body {
-  margin: 0;
-  font-family: 'Arial', sans-serif;
-}
+
 
 footer {
-  color: #fff;
+  color: white;
+  width: 100%;
 }
 
-.main-footer {
+footer .container{
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 40px 45px;
+  background-color: black;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+footer .container .same-col{
+  width: 23%;
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 15px;
+}
+
+footer .container .col-1{
+  align-items: center;
+}
+
+footer .container .col-1 img{
+  width: 35%;
+}
+
+footer .container .col-1 h3{
+  text-align: center;
+  font-size: 1rem;
+}
+
+footer .container .same-col .heading span{
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+footer .container .same-col .heading span::after{
+  content: "";
+  width: 90%;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+}
+
+footer .container .col-2 ul{
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+}
+
+footer .container .col-2 ul li a{
+  color: white;
+  font-weight: 700;
+}
+
+footer .container .col-3 .address-detail{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+footer .container .col-3 .address-detail .address{
+  display: flex;
+  gap: 10px;
+}
+
+footer .container .col-3 .address-detail .address span{
+  color: white;
+}
+
+footer .container .col-3 .address-detail .address h4{
+  font-size:  18px;
+  color: white;
+}
+
+footer .container .col-3 .address-detail .owner-name{
+  display: flex;
+  gap: 10px;
+}
+
+footer .container .col-3 .address-detail .owner-name span{
+  color: white;
+}
+
+footer .container .col-3 .address-detail .owner-name h4{
+  font-size:  18px;
+  color: white;
+}
+
+footer .container .col-3 .address-detail .contact-number{
+  display: flex;
+  gap: 10px;
+}
+
+footer .container .col-3 .address-detail .contact-number span{
+  color: white;
+}
+
+footer .container .col-3 .address-detail .contact-number .number{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+footer .container .col-3 .address-detail .contact-number .number a{
+  color: white;
+}
+
+footer .container .col-3 .address-detail .company-detail{
+  display: flex;
+  gap: 10px;
+}
+
+footer .container .col-3 .address-detail .company-detail span{
+  color: white;
+}
+
+footer .container .col-3 .address-detail .company-detail a{
+  color: white;
+}
+
+footer .newsletter-detail{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+footer .newsletter-detail form{
+  width: 100%;
+}
+
+footer .newsletter-detail form .email-box{
+  width: 100%;
+  height: 30px;
+  display: flex;
+
+}
+
+footer .newsletter-detail form .email-box input{
+  width: 75%;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding-left: 5px;
+}
+
+footer .newsletter-detail form .email-box button{
+  width: 25%;
+  height: 100%;
+}
+
+footer .newsletter-detail .social h4{
+  margin-bottom: 15px;
+}
+
+footer .newsletter-detail .social .all-link{
+  display: flex;
+  gap: 20px;
+}
+
+footer .newsletter-detail .social .all-link a span{
+  color: white;
+  font-size: 23px;
+}
+
+@media (max-width:980px) {
+  footer .container{
+    flex-wrap: wrap;
+  }
+  
+  footer .container .same-col{
+    width: 47%;
+  }
+
+  footer .container .col-1{
+    align-items: center;
+  }
+}
+
+@media (max-width:512px) {
+  footer .container{
+    flex-wrap: wrap;
+  }
+  
+  footer .container .same-col{
+    width: 100%;
+    align-items: center;
+  }
+
+  footer .container .col-1{
+    align-items: center;
+  }
+
+  footer .container .col-2 ul{
+    align-items: center;
+  }
+
+  footer .container .col-3 .address-detail{
+    align-items: center;
+  }
+
+  footer .container .col-3 .address-detail .same{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .container .col-3 .address-detail .same h4{
+    text-align: center;
+  }
+
+  footer .newsletter-detail{
+    align-items: center;
+  }
+
+  footer .newsletter-detail .social .all-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+
+
+
+
+
+
+/* .main-footer {
   max-width: 100%;
   background-color: hsl(205, 90%, 12%);
   padding: 1.2rem;
@@ -60,12 +294,6 @@ footer {
   color: #fff;
 
 }
-
-/* .address {
-  display: flex;
-  align-items: center;
-  margin-top: 20px;
-} */
 
 .address .fas,
 .address .text {
@@ -138,4 +366,4 @@ footer {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
-}
+} */

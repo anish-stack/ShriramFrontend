@@ -17,6 +17,7 @@ import PrivacyPolicy from './component/Privacy-Policy/PrivacyPolicy';
 import Termcondition from './component/Termcondition/Termcondition';
 import Shipping from './component/shipping/Shipping';
 import Refund from './component/refund/Refund';
+import PaymentSuccess from './component/paymentSuccess/PaymentSuccess';
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -50,6 +51,7 @@ function App() {
         <Route path='/policy' element={<PrivacyPolicy/>}/>
         <Route path='/shipping-policy' element={<Shipping/>}/>
         <Route path='/refund' element={<Refund/>}/>
+        <Route path='/paymentsuccess' element={<PaymentSuccess/>}/>
 
       </Routes>
       <Footer/>
