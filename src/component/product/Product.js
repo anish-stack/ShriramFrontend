@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import ProductCard from './ProductCard';
+import './product.css'
 
 const Product = () => {
   const [product, setProduct] = useState([]);
@@ -27,11 +28,15 @@ const Product = () => {
 
   return (
     <>
-      <h2 className='heading'>Our <span>Products</span></h2>
-      {loading && <p>Loading...</p>}
-      {error && <p>Error: {error}</p>}
-      {product.length > 0 && <ProductCard  Product={product} />}
-      {product.length === 0 && !loading && !error && <p>No products available.</p>}
+      <div className='product-main'>
+        <div className='container'>
+          <h2 className='heading'>Our <span>Products</span></h2>
+          {loading && <p>Loading...</p>}
+          {error && <p>Error: {error}</p>}
+          {product.length > 0 && <ProductCard Product={product} />}
+          {product.length === 0 && !loading && !error && <p>No products available.</p>}
+        </div>
+      </div>
     </>
   );
 };

@@ -1,6 +1,8 @@
 import React from 'react';
 import Cookies from 'js-cookie';
 import './Cart.css'
+import cart from './cart.png'
+import { Link } from 'react-router-dom';
 const Cart = ({ setCart }) => {
   const cartItemss = Cookies.get('cart');
   const cartItems = JSON.parse(cartItemss || '[]');
@@ -17,9 +19,15 @@ const Cart = ({ setCart }) => {
 
   return (
     <div className="cart-container">
-      <h2>Shopping Cart</h2>
+      <div className='heading'>
+      <span>Shopping Cart</span>
+      </div>
       {cartItems.length === 0 ? (
-        <p>Your cart is empty.</p>
+        <div className='empty-cart'>
+          <img src={cart} alt="" />
+          <h4>Your Cart is Empty</h4>
+          <Link to={`/shop`} >Go Shopping!</Link>
+        </div>
       ) : (
         <div>
           <ul>
