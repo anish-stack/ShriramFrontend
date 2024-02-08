@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './profile.css'
 import MyOrder from './MyOrder';
-import CancelOrder from './CancelOrder';
+// import CancelOrder from './CancelOrder';
 import Payment from './Payment';
 import Return from './Return';
 
@@ -39,9 +39,7 @@ const Profile = () => {
                                     {
                                         isActive === "My-Order" ? (
                                             <MyOrder />
-                                        ) : isActive === "cancel" ? (
-                                            <CancelOrder />
-                                        ) : isActive === "payment" ? (
+                                        ): isActive === "payment" ? (
                                             <Payment />
                                         ) : isActive === "return" ? (
                                             <Return />
