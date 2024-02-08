@@ -51,9 +51,6 @@
   
   /* Responsive styles */
   @media (max-width: 768px) {
-    .logo span {
-      /* display: none; */
-    }
     .swiper-slide img {
       display: block;
       width: 100%;
