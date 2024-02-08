@@ -21,6 +21,7 @@ import PaymentSuccess from './component/paymentSuccess/PaymentSuccess';
 import PayForm from './component/PaymentForms/PayForm';
 import OrderForm from './component/cart/OrderForm';
 import Profile from './component/Profile/Profile';
+import OrderFetch from './component/Profile/OrderFetch';
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -58,6 +59,7 @@ function App() {
         <Route path='/profile' element={<Profile/>}/>
 
         <Route path='/paymentsuccess/:transication/:value' element={<PaymentSuccess/>}/>
+        <Route path='/my-order' element={<OrderFetch/>} />
 
       </Routes>
       <Footer/>
