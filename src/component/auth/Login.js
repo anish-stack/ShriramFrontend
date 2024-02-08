@@ -23,7 +23,13 @@ const Login = () => {
         "https://eccomerce-av7e.onrender.com/api/v1/Login",
         formdata
       );
-      console.log(res.data.Token);
+      console.log(res.data);
+      const userdetails = {
+        Name:res.data.login.Name,
+        Email:res.data.login.Email
+
+      }
+     localStorage.setItem("User-details",JSON.stringify(userdetails))
       localStorage.setItem('token',res.data.Token)
       if (res.data.success) {
         toast.success("Login successful!");

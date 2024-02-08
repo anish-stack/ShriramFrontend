@@ -1,0 +1,97 @@
+.profile-section{
+    width: 100%;
+}
+
+.profile-section .container{
+    max-width: 1920px;
+    margin: 0 auto;
+    /* padding: 30px 35px; */
+}
+
+.profile-section .container .profile-box{
+    width: 100%;
+    /* height: 200px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aliceblue ;
+    padding: 20px 0px;
+}
+
+.profile-section .container .profile-box .user-detail{
+    width: 49%;
+}
+
+.profile-section .container .profile-box .user-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile-section .container .profile-box .user-profile-img{
+    width: 49%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-section .container .profile-box .user-profile-img .img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+    overflow: hidden;
+}
+
+.profile-section .container .profile-box .user-profile-img .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* login section  */
+
+.not-login-section{
+    width: 100%;
+}
+
+.not-login-section .container{
+    max-width: 1920px;
+    /* height: 500px; */
+    margin: 0 auto;
+    padding: 30px 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.not-login-section .container .not-login-bg{
+    width: 49%;
+}
+
+.not-login-section .container .not-login-bg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.not-login-section .container .not-login-detail{
+    width: 49%;
+}
+
+.not-login-section .container .not-login-detail h2{
+    font-size: 2rem;
+    color: black;
+}
+
+.not-login-section .container .not-login-detail a{
+    padding: 7px 10px;
+    background-color: aquamarine;
+    padding: 6px;
+}

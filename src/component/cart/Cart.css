@@ -17,6 +17,54 @@
   padding-top: 10px;
   position: relative;
 }
+.min-h-screen{
+  margin-top: 22px;
+  width: 100%;
+  /* border:1px solid; */
+min-height: 100vh;
+}
+.selected{
+cursor: pointer;
+  background-color: #ff5e5e;
+  color: white !important;  
+  padding: 4px 9px;
+  margin-right: 22px;
+
+}
+.selected:nth-child(2){
+  margin-left: 22px;
+  background-color: #81ff5e;
+
+}
+.selected:nth-child(3){
+  margin-left: 22px;
+  background-color: #ffe710;
+
+}
+.selected:nth-child(4){
+  margin-left: 22px;
+  background-color: #0eafff;
+
+}
+.selected:nth-child(5){
+  margin-left: 22px;
+  background-color: #d15eff;
+
+}
+.selected:nth-child(6){
+  margin-left: 22px;
+  background-color: #8c5eff;
+
+}
+.cart-p{
+  /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+
+}
 
 .cart-container .heading span::after{
   content: "";

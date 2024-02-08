@@ -18,6 +18,9 @@ import Termcondition from './component/Termcondition/Termcondition';
 import Shipping from './component/shipping/Shipping';
 import Refund from './component/refund/Refund';
 import PaymentSuccess from './component/paymentSuccess/PaymentSuccess';
+import PayForm from './component/PaymentForms/PayForm';
+import OrderForm from './component/cart/OrderForm';
+import Profile from './component/Profile/Profile';
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -51,7 +54,10 @@ function App() {
         <Route path='/policy' element={<PrivacyPolicy/>}/>
         <Route path='/shipping-policy' element={<Shipping/>}/>
         <Route path='/refund' element={<Refund/>}/>
-        <Route path='/paymentsuccess' element={<PaymentSuccess/>}/>
+        <Route path='/Payform' element={<OrderForm/>}/>
+        <Route path='/profile' element={<Profile/>}/>
+
+        <Route path='/paymentsuccess/:transication/:value' element={<PaymentSuccess/>}/>
 
       </Routes>
       <Footer/>

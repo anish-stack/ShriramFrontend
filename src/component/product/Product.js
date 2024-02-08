@@ -31,7 +31,9 @@ const Product = () => {
       <div className='product-main'>
         <div className='container'>
           <h2 className='heading'>Our <span>Products</span></h2>
-          {loading && <p>Loading...</p>}
+          {loading && <div className='div-loader'>
+            <p className='laoding'>Loading...</p>
+          </div>}
           {error && <p>Error: {error}</p>}
           {product.length > 0 && <ProductCard Product={product} />}
           {product.length === 0 && !loading && !error && <p>No products available.</p>}

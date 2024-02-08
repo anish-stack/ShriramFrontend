@@ -29,7 +29,7 @@ const ProductCard = ({ Product }) => {
             {currentProducts.map((item) => (
               <Link to={`/Product-Info/${item._id}`} key={item.id} className="product-card">
                 <div className='product-image'>
-                  <img src={item.image} alt={item.ProductName} />
+                  <img src={item.image[0]} alt={item.ProductName} />
                 </div>
                 <div className='product-detail'>
                   <span className="product-name">{item.ProductName}</span>

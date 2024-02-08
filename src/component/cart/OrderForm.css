@@ -1,0 +1,102 @@
+
+.orderform-main-section{
+  width: 100%;
+}
+
+.orderform-main-section .orderform-container-main{
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 20px 25px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.orderform-main-section .orderform-container-main .heading{
+  text-align: center;
+}
+
+.orderform-main-section .orderform-container-main .heading span{
+  font-size: 2rem;
+  font-weight: 700;
+  font-variant: small-caps;
+  color: black;
+
+}
+
+.orderform-main-section .orderform-container-main .orderform-detail{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.orderform-main-section .orderform-container-main .orderform-detail .orderform-detail-bg{
+  width: 49%;
+}
+
+.orderform-main-section .orderform-container-main .orderform-detail .orderform-detail-bg img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.orderform-main-section .orderform-container-main .orderform-detail .orderform-detail-form{
+  width: 49%;
+}
+
+
+
+.order-form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+
+  @media (max-width:766px) {
+
+    .orderform-main-section .orderform-container-main{
+      gap: 0px;
+    }
+
+    .orderform-main-section .orderform-container-main .orderform-detail{
+      flex-direction: column;
+    }
+    
+    .orderform-main-section .orderform-container-main .orderform-detail .orderform-detail-bg{
+      width: 100%;
+    }
+    
+    .orderform-main-section .orderform-container-main .orderform-detail .orderform-detail-form{
+      width: 100%;
+    }
+  }

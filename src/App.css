@@ -81,3 +81,34 @@ body {
     max-width: 1400px;
     margin: 0 auto;
   }
+  
+  .div-loader {
+    height: 70vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .div-loader .loading {
+    font-size: 3rem;
+  }
+  
+  /* Create the loading animation */
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .div-loader .loading::after {
+    content: '';
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 0.3rem solid #ccc;
+    border-top-color: #333;
+    border-radius: 50%;
+    display: inline-block;
+    animation: spin 1s linear infinite; /* Apply the spin animation */
+  }
+  
